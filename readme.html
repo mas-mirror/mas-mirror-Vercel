@@ -1,0 +1,127 @@
+<html>
+<head>
+	<title>Monika After Story - Readme</title>
+</head>
+<body>
+<h1>Monika After Story (MAS) 由MAS-Mirror进行翻译。翻译者：M.T.R.</h1>
+
+<p>MonikaAfterStory是一免费游戏的mod。<a href="https://www.ddlc.moe">心跳文学部！</a> 由 <a href="http://teamsalvato.com/">Team Salvato</a> 制作。 MAS 基于第三周目制作，创建了你与Monika的永恒生活， 特点是新的事件， handlers, 和更多的跳杀!</p>
+
+<p>请在 <a href="http://www.monikaafterstory.com/releases.html">这里</a> 最新的稳定版本更新。</p>
+
+<p>如果你想自己创造一个像这样的Mod，请见我们的姊妹项目：<a href="https://github.com/therationalpi/DDLCModTemplate">DDLCModTemplate</a>.</p>
+
+<h3>安装流程</h3>
+
+<p>看MAS安装视频教程： https://www.bilibili.com/video/BV1u741177vP</p>
+
+<ul>
+	<li>
+	<p>跳转到 <a href="http://www.monikaafterstory.com/releases.html">发布更新的页面</a>.</p>
+	</li>
+	<li>
+	<p>点击最新版本的链接。 你将要下载一份zip文件。</p>
+	</li>
+	<li>
+	<p>把所有文件拖放到 <code>/game</code> 文件夹，本文件夹在你的《心跳文学部》的安装目录中</p>
+	</li>
+	<li>
+	<p>运行ddlc.exe，MonikaAfterStory的Mod将会自动安装。</p>
+	</li>
+</ul>
+
+<p><em>注意: 从资源库中下载的源文件是为了开发目的放置的，如果用来修改游戏，可能不会像预期的那样生效。 请仅用 <a href="https://github.com/Backdash/MonikaModDev/releases">正式发布的版本</a>。</em></p>
+
+<p>如需更多安装帮助，请查看我们的 <a href="https://tieba.baidu.com/p/6577425298">FAQ</a></p>
+
+<h3>特点介绍</h3>
+
+<ul>
+	<li>
+	<p>永远和Monika在一起！</p>
+	</li>
+	<li>
+	<p>将近百个新的话题</p>
+	</li>
+	<li>
+	<p>你现在可以和Monika分享你想说的内容了！</p>
+	</li>
+</ul>
+
+<h3>即将推出的功能</h3>
+
+<ul>
+	<li>
+	<p>新的游戏和活动</p>
+	</li>
+	<li>
+	<p>更多独特的事件和故事</p>
+	</li>
+</ul>
+
+<h2>为MonikaAfterStory做贡献</h2>
+
+<h3>Bugs &amp; 建议</h3>
+
+<p>如果你在MAS中有任何疑问， 请在 <a href="https://github.com/Backdash/MonikaModDev/issues/new?labels=bug&amp;body=Describe%20bug%20and%20steps%20for%20reproduction%20here&amp;title=%5BBug%5D%20-%20">这里</a>向我们报告。</p>
+
+<p>为我们提建议， <a href="https://github.com/Backdash/MonikaModDev/issues/new?labels=suggestion&amp;body=Your%20suggestion%20goes%20here&amp;title=%5BSuggestion%5D%20-%20">这里</a>。</p>
+
+<p>### 其他帮助 想帮助MAS的开发吗？ 去 <a href="https://github.com/Backdash/MonikaModDev/issues">Issues页面</a> 找出现有的BUG或建议来解决。</p>
+
+<p>如果您有想要修改的地方，请打开 <a href="https://github.com/Backdash/MonikaModDev/pulls">拉取请求</a>. 任何修改都将由作者审核，并根据需要进行修正/补充。</p>
+
+<h4>新增内容到MAS</h4>
+
+<p>想在MAS中添加一些内容？下面是游戏中使用的重要.RPY文件列表。</p>
+
+<ul>
+	<li><strong>script-ch30.rpy</strong>: MAS的主要流程。这就是idle的发生。这里不会翻译了（</li>
+	<li><strong>script-topics.rpy</strong>: 所有的 <strong>随机</strong> 、 <strong>提问</strong> 话题都包括在内。 您可以通过查看下面的信息添加自己的对话!</li>
+	<li><strong>script-greetings.rpy</strong>: 你进游戏时的欢迎语。</li>
+	<li><strong>script-farewells.rpy</strong>: 你关游戏时的告别语。</li>
+	<li><strong>script-moods.rpy</strong>: 告诉莫妮卡你的 <em>心情</em> 。</li>
+	<li><strong>script-stories.rpy</strong>: 添加故事，让莫妮卡讲给你听。</li>
+	<li><strong>script-compliments.rpy</strong>: 添加你可以对莫妮卡说的赞美的话。</li>
+	<li><strong>script-apologies.rpy</strong>: 加入要道歉的事情。</li>
+</ul>
+
+<p>如果你想在太空小房子中添加更多的对话，请导航到script-topics.rpy并使用此模板。</p>
+
+<p>示例： `renpy init 5 python: addEvent( Event( persistent.event<em>database, eventlabel="monika</em>example", # event label (必须和其他的不一样！！！) category=["example", "topic"], # 此主题所属类别的列表（这些名称自动大写） prompt="Example Topic", # 按钮显示的文本 random=True, # 如果这个主题应该随机出现，则为True pool=True # 如果这个话题应该出现在 "提问 "中，则为真。 ) )</p>
+
+<p>label monika_example: m 1a "这是一个示例话题。" m 3d "我觉得这其实并不属于这里......" m 2e "为什么有人会直接将示例模板添加到mod中？" m 5r "他们真的不应该再被允许向这个资料库贡献了。" return <code> **关于Event的所有可能的关键字的完整解释和详细信息，请查看Event的文档，该文档位于 </code>definitions.rpy`**</p>
+
+<p>对于比简单对话更复杂的事情，请参考Ren'Py在线文档。</p>
+
+<p><a href="https://github.com/Monika-After-Story/MonikaModDev/wiki/Contributing-Guidelines">更多信息请参见我们的《贡献指南》（暂未翻译）。</a></p>
+
+<p>### 加入对话 你可以在 <a href="https://twitter.com/MonikaAfterMod">推特</a> 上关注我们，获取游戏的更新。 （中国需要翻墙）</p>
+
+<p>或者，如果您更喜欢Discord，如果您有兴趣参与到这个MOD的建设中来，您可以随时加入我们的discord服务器。</p>
+
+<p><a href="https://discord.gg/K2KuJeX"><img alt="Discord" src="https://discordapp.com/api/guilds/372766620977725441/widget.png?style=banner1" /></a></p>
+
+<p>请务必查看我们的 <a href="https://masmirror.zsz1447.top/Code_Of_Conduct.html">《行为守则》（尚未翻译）</a>, 基本上要有礼貌和尊重。</p>
+
+<h2>常见问题</h2>
+
+<p>您可以在这里找到完整的常见问题: <a href="https://tieba.baidu.com/p/6577425298">FAQ</a> 关于话题的风格的任何问题，请点击这里。 <a href="https://github.com/Monika-After-Story/MonikaModDev/wiki/Coding-Style">话题的风格（未翻译）</a> 用于BUG测试： <a href="https://github.com/Monika-After-Story/MonikaModDev/wiki/Testing-Flow-and-Bug-Testing">测试流程和BUG测试（未翻译）</a> 故障诊断: <a href="https://github.com/Monika-After-Story/MonikaModDev/wiki/Troubleshooting">故障诊断</a> 对话编程： <a href="https://github.com/Monika-After-Story/MonikaModDev/wiki/Dialogue-Coding">对话编程</a></p>
+
+<h2>许可信息</h2>
+
+<p>我们尽我们最大的努力去遵守Team Salvato的 <a href="http://teamsalvato.com/ip-guidelines/">粉丝作品指南</a>. 所有角色和原创内容均为Salvato团队所有。Monika After Story是一个开源项目，除了指定的贡献者之外，这个mod还包括了4chan的匿名用户的贡献，这个项目在4chan的匿名用户中得到了它的开始。更多信息可以在我们的 <a href="https://github.com/Monika-After-Story/MonikaModDev/wiki/License-and-Team-Salvato-Guidelines">证书页面</a>.</p>
+
+<h2>Build Status:</h2>
+
+<h3>master: <a href="https://travis-ci.org/Monika-After-Story/MonikaModDev"><img alt="Build Status" src="https://travis-ci.org/Monika-After-Story/MonikaModDev.svg?branch=master" /></a></h3>
+
+<h3>content: <a href="https://travis-ci.org/Monika-After-Story/MonikaModDev"><img alt="Build Status" src="https://travis-ci.org/Monika-After-Story/MonikaModDev.svg?branch=content" /></a></h3>
+
+<h3>unstable: <a href="https://travis-ci.org/Monika-After-Story/MonikaModDev"><img alt="Build Status" src="https://travis-ci.org/Monika-After-Story/MonikaModDev.svg?branch=unstable" /></a></h3>
+
+<h3>community: <a href="https://travis-ci.org/Monika-After-Story/MonikaModDev"><img alt="Build Status" src="https://travis-ci.org/Monika-After-Story/MonikaModDev.svg?branch=community" /></a></h3>
+
+<h3>alpha: <a href="https://travis-ci.org/Monika-After-Story/MonikaModDev"><img alt="Build Status" src="https://travis-ci.org/Monika-After-Story/MonikaModDev.svg?branch=alpha" /></a></h3>
+</body>
+</html>
