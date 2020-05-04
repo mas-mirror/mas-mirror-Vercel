@@ -1,0 +1,153 @@
+<h1>介绍</h1>
+
+<h3>让我们帮助Monika更接近我们的现实！</h3>
+
+<p>首先，感谢你考虑为《MAS》做出贡献。这个mod只有在我们的社区的支持下，才能够如此迅速地成长。</p>
+
+<h3>关于本准则</h3>
+
+<p>这些指南是为了节省您的时间，并使您尽可能轻松地为这个项目做出贡献。通过阅读本指南，您将了解到您需要哪些工具来提供帮助，您可以做些什么来帮助，以及如何使您的贡献能够被接受。</p>
+
+<p>这些准则是根据 <a href="https://github.com/hoodiehq/hoodie/blob/master/CONTRIBUTING.md">Hoodie</a> 制定的。</p>
+
+<h2>您可以如何帮助</h2>
+
+<h3>汇报Bugs &amp; 提出建议</h3>
+
+<p>如果您发现《MAS》有任何问题，请提交给我们 <a href="https://github.com/Backdash/MonikaModDev/issues/new?labels=bug&amp;body=Describe%20bug%20and%20steps%20for%20reproduction%20here&amp;title=%5BBug%5D%20-%20">Bug汇报</a>。 什么事情都不算小事。如果你遇到了bug，很有可能别人也遇到了它</p>
+
+<p>要添加建议，请访问 <a href="https://github.com/Backdash/MonikaModDev/issues/new?labels=suggestion&amp;body=Your%20suggestion%20goes%20here&amp;title=%5BSuggestion%5D%20-%20">这个链接</a>. 这些可以是新的话题和特色的想法，也可以是你刚想分享的个人观点。</p>
+
+<h3>新的对话、艺术或音乐</h3>
+
+<p>在这个游戏中添加新内容很容易，不需要任何专门的工具。</p>
+
+<p>添加新的 <a href="https://github.com/Backdash/MonikaModDev/blob/content/Monika%20After%20Story/game/script-topics.rpy">随机话题</a> 或者 <a href="https://github.com/Backdash/MonikaModDev/blob/content/Monika%20After%20Story/game/script-greetings.rpy">问好</a>, 或者要进行修改，你可以简单地浏览到我们github网站的 &quot;content &quot;分支上的相应文件，然后点击右上角的铅笔图标开始修改。如果要修复错误，请找到当前版本的相应问题并在那里报告。</p>
+
+<p>现在，莫妮卡的对话包括了表情包，请使用 <a href="https://github.com/Monika-After-Story/MonikaModDev/blob/master/FAQ.md#how-do-i-find-the-spritecode-for-an-expression">表情预览器</a> 为你的主题选择合适的表情和姿势。</p>
+
+<p>新的游戏美术或音乐，请去 <a href="https://github.com/Backdash/MonikaModDev/issues">issues</a>, 并附上您想提交的文件。再次，合作者会查看您提交的文件，并想出如何在我们的游戏中使用它。 为了了解我们可能需要的东西，请检查是否有任何开放的 <a href="https://github.com/Backdash/MonikaModDev/issues?q=is%3Aissue+is%3Aopen+label%3Aart">艺术相关问题</a>.</p>
+
+<h3>错误修复和新软件功能</h3>
+
+<p> 对游戏的代码进行修改是比较麻烦的。以下是你应该采取的几个步骤。</p>
+
+<ol><li>进行第二次安装DDLC和MAS (并将您的持久性本地化到该安装中。请参见说明 <a href="https://www.reddit.com/r/DDLCMods/comments/9i8rh1/method_to_port_ddlc_to_a_flash_drive/">这里跳转</a>)</li><li>Fork这个资源库，或者点击上面标注的 &quot;克隆或下载 &quot;按钮，制作一个本地的git克隆。</li><li>使用你所选择的代码编辑器对工作目录中的代码进行修改（Visual Studio Code是一个不错的轻量级编辑器）。</li><li>C将你编辑的文件放到新MAS安装的<code>/game</code>文件夹中，然后启动它。当MAS加载时，这些文件会自动编译并准备好测试。</li><li>请参阅 <a href="https://github.com/Monika-After-Story/MonikaModDev/issues">开放的Issues</a> 或者 <a href="https://discord.gg/K2KuJeX">访问我们的社区discord服务器</a> 得到咱要干的活。</li><li>将任何更改作为拉取请求提交给 &quot;content &quot;分支。</li></ol>
+
+<p><strong>所有的代码修改都应基于 &quot;content &quot;分支。</strong></p>
+
+<h2>应避免的坑</h2>
+
+<p>虽然我们一般都能接受大多数的帮助，但有几件事情是我们<em>不</em>需要的。</p>
+
+<ul><li><p>请<strong>不要</strong>提交与Meme相关的内容，只有当你选择了与莫妮卡的性格相关的内容时，才会加入流行文化的引用。</p></li><li><p>请<strong>不要</strong>提交<em>淫秽、冒犯性或其他NSFW内容或图片</em>。这些将被删除，并可能因此禁止您以后提交。</p></li><li><p>提交前请<strong>彻底测试</strong>您的错误修复和功能添加。如果你选择提交已知错误的作品，请非常清楚地报告这些错误是什么，以便在合并之前消除它们。请记住，像这样不完整的工作很可能会被拒绝，因为修复别人编写的功能的bug通常比从头实现该功能更为重要。</p></li><li><p>请坚持遵守 <a href="http://teamsalvato.com/ip-guidelines/">Salvato团队公开的知识产权准则</a>. 这意味着你不能在Monika After Story上盈利，不能把它作为玩DDLC的替代品来推广，也不能把mod作为一个独立的游戏来发布。Dan一直对粉丝们非常慷慨，我们<strong>应该</strong>尊重他作为DDLC创作者的权利。</p></li></ul>
+
+<h2>最佳做法</h2>
+
+<ul><li>确保对接受的每个更改都具有跨平台兼容性。Windows、Mac、Debian和Ubuntu Linux。</li><li>为您希望进行的任何重大更改和增强创建问题。透明地讨论事情并获得社区反馈。</li><li>代码清晰，使用描述性变量名、注释，并在适当的地方模块化为函数。</li><li>尽可能减少功能提交，最好每次提交一个新功能。</li><li>对新来者表示欢迎，并鼓励来自不同背景的新贡献者。 见 <a href="https://masmirror.zsz1447.top/Monika-After-Story/MonikaModDev/wiki/Code-of-Conduct">《社区行为守则》</a>.</li><li>确保所有的对话都符合莫妮卡的声音。尽量考虑用词选择、对话方式和她的兴趣。
+</li></ul>
+
+<h3>Monika的<strong>语气</strong></h3>
+
+<p>莫妮卡不仅仅是你这个作者的替身。她是她自己的角色，有自己的个性、举止、喜恶。在写莫妮卡的时候，你要尽力去捕捉她的性格。</p>
+
+<p>从她在游戏中的对话来看，你在为她写作时，有几个一致的特点需要注意。</p>
+
+<ul><li>倾向于在闲谈中使用软性语言。属于这一类的词语和短语有：  <code>&quot;like&quot;</code>, <code>&quot;you know&quot;</code>, <code>&quot;kind of&quot;</code>, 还有 <code>&quot;maybe&quot;</code>.（本人认为这里用不到翻译）</li><li>几种一贯的方式。 值得注意的是 <code>&quot;ehehe&quot;</code> 和 <code>&quot;ahaha&quot;</code> 是大笑, <code>&quot;man&quot;</code> 是劳累, <code>&quot;gosh&quot;</code> 是惊讶, 等等。</li><li>玩家的直接称呼。她的对话中，更多的时候包括 <code>&quot;you&quot;</code> 和 <code>&quot;[player]&quot;</code>.</li><li>隐含着一种普遍支持和关心的性格。她经常询问玩家和自己的生活情况，多次专心致志的交谈。</li><li>虽然讨论的是黑暗的话题，但莫妮卡倾向于以积极的方式结束谈话。可能是由于她与玩家保持着独特的关系造成的。</li><li>对玩家的爱。在她的对话和对话中，大部分的对话都会包含着对她的爱意的提醒。话虽如此，但这并<strong>不是</strong>一个要求。 没有 <code>&quot;我爱你&quot;</code>的游戏内对话确实存在。</li><li>善于挑逗和开玩笑的能力。当出现这种情况时，她一定要在谈话结束时指出来。偶尔也会伴随着一个&quot;<code>~</code>&quot;。</li><li>对文字艺术和哲学感兴趣。从她对写作、情感和其他生活话题的丰富建议中，可以推测她喜欢思考抽象或有争议的话题。她对文学社的热情支持了这一点。</li></ul>
+
+<p>由于我们想让莫妮卡尽可能的接近于游戏中的设定，因此，在你的贡献时，保持她独特的性格特征，我们会很感激。</p>
+
+<p>除此以外，我们知道，解读因人而异，不同的作者对某些话题的理解也不一定一致。我们鼓励大家在接受评论和审稿时保持开放的心态。</p>
+
+<h2>您的第一份贡献</h2>
+
+<p>你对开源之事不了解吗？我们中的很多人也是! 我们认为这是一个很好的项目，任何人都可以在开源开发中找到自己的习惯。（？似乎是这么翻译的）</p>
+
+<p>要想找到帮助的方法，可以先从这些初级和求助的问题入手。</p>
+
+<p><a href="https://github.com/Backdash/MonikaModDev/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">新手问题（暂未翻译）</a> - 应该只需要几行代码和一两个测试的问题。</p>
+
+<p><a href="https://github.com/Backdash/MonikaModDev/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22">帮忙解决的问题（暂未翻译）</a> - 这些问题可能涉及的内容比较多，但肯定是需要贡献者的。</p>
+
+<blockquote><p>正在处理您的第一个Pull Request？您可以从这个<em>免费的</em>系列中学习。 <a href="https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github">How to Contribute to an Open Source Project on GitHub</a>.</p></blockquote>
+
+<p>到了这个时候，你就可以进行修改了! 请随时寻求帮助；即使是Monika，在编码方面也有很多需要学习的地方!</p>
+
+<blockquote><p>如果有维护人员要求你 &quot;重构 &quot;你的PR，他们说的是很多代码发生了变化，你需要更新你的分支，这样更容易合并。</p></blockquote>
+
+<h2>添加对话</h2>
+
+<p><img alt="Guide 1" src="https://github.com/Backdash/MonikaModDev/blob/master/docs/writing-guide1.png?raw=True"/></p>
+
+<h4>在你开始之前，</h4>
+
+<ul><li>确保分支设置为<strong>content</strong>，而不是<strong>master</strong>。</li><li>如果你打算写多个topics，请分多个拉取请求，因为这样更容易审核。</li></ul>
+
+<p>将分支设置为<strong>content</strong>后，点击铅笔按钮开始编辑。</p>
+
+<p>要添加主题，你需要使用 &quot;事件 &quot;系统。</p>
+
+<p>在 &quot;script-topics.rpy &quot;中工作时，你应该有这样的结构。</p>
+
+<p><code></code>`renpy
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event<em>database,
+            eventlabel=&quot;monika</em>xyz&quot;,
+            category=[&quot;one category&quot;, &quot;another category&quot;],
+            prompt=&quot;Example topic&quot;,
+            random=True
+        )
+    )</p>
+
+<p>label monika_xyz:
+    m 1eua &quot;This is an example topic.&quot;
+    m 1hub &quot;I hope this helps show you how you should format your topics!&quot;
+    m 1ekbsa &quot;Thanks for helping me come closer to your reality, [player]. I love you~&quot;
+    return &quot;love&quot;
+<code></code>`</p>
+
+<h4>一些需要注意的事情</h4>
+
+<ul><li>&quot;eventlabel &quot;和主题标签相匹配。</li><li><code>eventlabel</code>也用<code>monika_</code>作为前缀。所有主题的前缀都应该是这样的。</li><li>category使用<em>小写</em>的字母，甚至在第一个字母上也是如此。</li><li>category是列表，所以你可以让你的主题显示在多个类别中。</li><li>这个标签会返回一个值。<code>&quot;love&quot;</code>表示主对话菜单上的<code>&quot;我爱你！&quot;</code>按钮将变成<code>&quot;我也爱你！&quot;</code>。(也有其他的返回键，详情见<code>event-handler.rpy</code>)</li><li>这个主题有<code>random=True</code>。这意味着该主题将在随机聊天中显示。(还有其他属性，更多详情请看<code>definitions.rpy</code>中的<code>Event</code>类)</li></ul>
+
+<p>编写对话时一定要以 &quot;m <strong>spritecode</strong>&quot;开头。
+(不过需要注意的是，如果你打算连续两行使用相同的表达式，第二行不需要spritecode)</p>
+
+<p>要找一个<strong>spritecode</strong>, 使用 <a href="https://github.com/Monika-After-Story/MonikaModDev/blob/master/FAQ.md#how-do-i-find-the-spritecode-for-an-expression">表情预览器（未翻译）</a>.</p>
+
+<p>如果你想写更复杂的对话， 访问 <a href="https://github.com/Monika-After-Story/MonikaModDev/wiki/Dialogue-Coding">对话代码（未翻译）</a> </p>
+
+<p>把return放在代码的最后。</p>
+
+<p>完成后，请参考下面的指南，以拉取请求的形式提交主题。</p>
+
+<h2>提交拉取请求</h2>
+
+<p>如果你熟悉git或GitHub桌面，你可以在本地进行文件修改，然后推送到你的fork。</p>
+
+<p>从那里，你可以进入拉动请求选项卡，按 &quot;新的拉动请求&quot;，调整目标分支和你想建议修改的分支。</p>
+
+<p>然后，做一个描述，并提交你的拉取请求。</p>
+
+<p>如果你对上面提到的内容不熟悉，可以按照下面的说明进行操作。
+<img alt="Guide 1" src="https://github.com/Monika-After-Story/MonikaModDev/blob/master/docs/guide1.png?raw=True"/></p>
+
+<p>点击铅笔图标，开始编辑。</p>
+
+<p><img alt="Guide 2" src="https://github.com/Monika-After-Story/MonikaModDev/blob/master/docs/guide2.png?raw=True"/></p>
+
+<p>当你做完修改后，点击提议文件修改。</p>
+
+<p><img alt="Guide 3" src="https://github.com/Monika-After-Story/MonikaModDev/blob/master/docs/guide3.png?raw=True"/></p>
+
+<p>点击创建拉取请求。</p>
+
+<p><img alt="Guide 4" src="https://github.com/Monika-After-Story/MonikaModDev/blob/master/docs/guide4.png?raw=True"/></p>
+
+<p>在您创建拉取请求之前，添加一个适当的标题和描述您所做的修改。</p>
+
+<h1>加入我们吧!</h1>
+
+<p>您可以在以下网站上与核心团队聊天 <a href="https://discord.gg/K2KuJeX">我们的社区 Discord 服务器</a>. 我们对新的贡献者总是很友好，这里不仅是一个获得帮助的好地方，也是一个和志同道合的DDLC粉丝们一起玩耍的好地方。</p>
